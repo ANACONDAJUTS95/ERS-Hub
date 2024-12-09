@@ -56,7 +56,7 @@ System maintenance occurs monthly:
 
 ## Feedback and Improvement
 We welcome staff suggestions for system enhancement. Please submit feedback to:
-- Email: systemfeedback@ersmpcc.org
+- Email: acesepacio@gmail.com
 - Internal Suggestion Portal
 
 ---
