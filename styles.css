@@ -29,8 +29,23 @@
   transition: background-position 0.3s ease-in-out; 
 }
 
+.sched-chip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5vw;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  width: fit-content;
+  padding: 0.25vh 2.5vh 0.25vh 1vh;
+  border-radius: 100px;
+  border: 1px solid rgb(28, 28, 28, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
 .link-sections {
-  margin: 5vh 10vh 0 10vh;
+  margin: 2vh 10vh 0 10vh;
 }
 
 h3.welcome-txt {
@@ -73,6 +88,18 @@ a {
   height: fit-content;
   width: 200px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.sched-chip:hover {
+  cursor: pointer;
+  border: none;
+  color: #34a853;
+  transform: scale(1.05);
+  box-shadow: 0 12px 48px rgba(52, 168, 83, 0.5);
+
+  .sched {
+    color: #34a853;
+  }
 }
 
 .box:hover {
