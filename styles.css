@@ -111,25 +111,25 @@ a {
   .form-label {
     color: #673ab7;
     font-weight: 600;
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 
   .sheet-label {
     color: #34a853;
     font-weight: 600;
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 
   .sched-label {
     color: #4285f4;
     font-weight: 600;
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 
   .drive-label {
     color: #fbbc04;
     font-weight: 600;
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 
   .forms {
