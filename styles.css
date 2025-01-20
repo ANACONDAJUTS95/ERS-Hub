@@ -29,12 +29,15 @@
   transition: background-position 0.3s ease-in-out; 
 }
 
+.sched-chip-1 {
+  margin-left: 5vw;
+}
+
 .sched-chip {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-left: 5vw;
   margin-top: 2vh;
   margin-bottom: 3vh;
   width: fit-content;
@@ -42,6 +45,12 @@
   border-radius: 100px;
   border: 1px solid rgb(28, 28, 28, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.chips {
+  display: flex;
+  flex-direction: row;
+  gap: 2vh;
 }
 
 .link-sections {
