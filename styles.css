@@ -51,6 +51,7 @@
   display: flex;
   flex-direction: row;
   gap: 2vh;
+  margin-bottom: -3vh;
 }
 
 .link-sections {
@@ -85,18 +86,48 @@ a {
   gap: 3vh;
 }
 
-.box {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 2vh 0 2vh 0;
-  padding: 2vh;
-  border-radius: 10px;
-  border: 1px solid rgb(28, 28, 28, 0.2);
-  height: fit-content;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid rgba(28, 28, 28, 0.2);
+  padding: 1.5vh;
   width: 200px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease, scale 0.3s ease, margin 0.3s ease;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+}
+
+.card-label {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+  transition: font-weight 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(66, 133, 244, 0.2);
+  border-color: rgba(66, 133, 244, 0.4);
+  margin: 20px;
+  scale: 1.2;
+
+  .card-label {
+    color: #2d65be;
+    font-weight: bold;
+  }
 }
 
 .sched-chip:hover {
@@ -108,53 +139,6 @@ a {
 
   .sched {
     color: #34a853;
-  }
-}
-
-.box:hover {
-  cursor: pointer;
-  border: none;
-  /* transform: scale(1.05);  */
-  /* box-shadow: 0 12px 48px rgba(31, 38, 135, 0.5);  */
-
-  .form-label {
-    color: #673ab7;
-    font-weight: 600;
-    /* text-decoration: underline; */
-  }
-
-  .sheet-label {
-    color: #34a853;
-    font-weight: 600;
-    /* text-decoration: underline; */
-  }
-
-  .sched-label {
-    color: #4285f4;
-    font-weight: 600;
-    /* text-decoration: underline; */
-  }
-
-  .drive-label {
-    color: #fbbc04;
-    font-weight: 600;
-    /* text-decoration: underline; */
-  }
-
-  .forms {
-    color: #673ab7;
-  }
-
-  .sheets {
-    color: #34a853;
-  }
-
-  .sched {
-    color: #4285f4;
-  }
-
-  .drive {
-    color: #fbbc04;
   }
 }
 
