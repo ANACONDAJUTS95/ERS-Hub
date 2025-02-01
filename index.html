@@ -9,32 +9,42 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
   </head>
   <body>
-    <div class="header">
-      <h1>ERS Maternity and Pediatric Care Clinic</h1>
-      <h3 class="welcome-txt">Welcome to the hub!</h3>
+    <!-- Welcome Page -->
+    <div id="welcome-screen">
+      <h1 class="welcome-title">Welcome to ERS Hub</h1>
+      <p class="welcome-subtitle">Connecting healthcare seamlessly</p>
     </div>
 
-    <div class="chips">
-      <a href="https://docs.google.com/spreadsheets/d/1-EB5Y-E5V_fbY9tv5GCTMbgaDjT4UKL3ERRDEnrI4sQ/edit?usp=sharing" target="_blank">
-        <div class="sched-chip sched-chip-1">
-          <span class="material-symbols-rounded sched" style="font-size: 18px;">
-            table
-          </span>
-            Schedule
-        </div>
-      </a>
-  
-      <a href="https://forms.gle/ChHePHY5N6pT5ESo8" target="_blank">
-        <div class="sched-chip">
-          <span class="material-symbols-rounded sched" style="font-size: 18px;">
-            description
-          </span>
-            Evaluation Sheet
-        </div>
-      </a>
+    <!-- Main Content (Hidden Initially) -->
+    <div id="main-content" class="hidden">
+      <div class="header">
+        <h1>ERS Maternity and Pediatric Care Clinic</h1>
+        <h3 class="welcome-txt">Welcome to the hub!</h3>
     </div>
     
     <div class="link-sections">
+      <!-- Chips -->
+      <div class="chips">
+        <a href="https://docs.google.com/spreadsheets/d/1-EB5Y-E5V_fbY9tv5GCTMbgaDjT4UKL3ERRDEnrI4sQ/edit?usp=sharing" target="_blank">
+          <div class="sched-chip sched-chip-1">
+            <span class="material-symbols-rounded sched" style="font-size: 18px;">
+              table
+            </span>
+              Schedule
+          </div>
+        </a>
+    
+        <a href="https://forms.gle/ChHePHY5N6pT5ESo8" target="_blank">
+          <div class="sched-chip">
+            <span class="material-symbols-rounded sched" style="font-size: 18px;">
+              description
+            </span>
+              Evaluation Sheet
+          </div>
+        </a>
+      </div>
+
+      <!-- Cards -->
       <h3 class="forms-sec">Ward & OPD Files</h3>
       <div class="section">
         <a href="https://forms.gle/ughYfsuUF8unLJc77" target="_blank">
@@ -93,7 +103,7 @@
         </a>
       </div>
     </div>
-
     <div class="bottom"></div>
+    <script src="script.js"></script>
   </body>
 </html>
