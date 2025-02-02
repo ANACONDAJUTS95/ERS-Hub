@@ -12,7 +12,7 @@
 body {
   background-color: #f4f7fc;
   color: #333;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Welcome Page */
