@@ -280,7 +280,9 @@ a {
     font-size: 1.2rem;
   }
 
-  .forms-sec {
+  .forms-sec,
+  .sheet-sec,
+  .drive-sec {
     display: flex;
     justify-content: center;
   }
