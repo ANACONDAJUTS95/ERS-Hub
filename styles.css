@@ -79,6 +79,74 @@ body {
 }
 
 /* Navigation Chips */
+
+/* Smaller Filter Dropdown */
+/* Ensure the dropdown has a pointer cursor */
+.filter-dropdown {
+  cursor: pointer;
+  appearance: none; /* Remove default styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px 12px;
+  border: 1px solid #0077b6;
+  border-radius: 5px;
+  background-color: white;
+  color: #0077b6;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Style dropdown when opened */
+.filter-dropdown:focus {
+  outline: none;
+  border-color: #0077b6;
+  box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+}
+
+/* Custom styling for options (works in some browsers) */
+.filter-dropdown option {
+  background-color: white;
+  color: #0077b6;
+  font-weight: 500;
+  padding: 10px;
+}
+
+/* Hover and selected option styling */
+.filter-dropdown option:hover,
+.filter-dropdown option:checked {
+  background-color: #0077b6 !important;
+  color: white !important;
+}
+
+
+/* Align "Ward & OPD Files" Header with Filter */
+.staff {
+  display: flex;
+  align-items: center;
+  justify-content: start; /* Align elements */
+  gap: 40px;
+}
+
+.forms-sec {
+  padding-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Filtering Only Elements Inside `.opd-ward` */
+.opd-ward .opd-card,
+.opd-ward .ward-card {
+  display: block; /* Ensure visibility by default */
+}
+
+.opd-ward.filtered .opd-card {
+  display: none; /* Hide OPD items when filtering Ward */
+}
+
+.opd-ward.filtered .ward-card {
+  display: none; /* Hide Ward items when filtering OPD */
+}
+
 .sched-chip {
   padding: 0 40px 0 10px;
   border-radius: 50px;
