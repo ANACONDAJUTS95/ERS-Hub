@@ -1,181 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ERS Medical Portal</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-  </head>
-  <body>
-    <!-- Welcome Screen -->
-    <div id="welcome-screen">
-      <div class="welcome-content">
-        <h1 class="welcome-title">ERS Medical Portal</h1>
-        <p class="welcome-subtitle">Emergency Resource Management System</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERS Medical Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <!-- Welcome Screen -->
+  <div id="welcome-screen">
+    <div class="welcome-content">
+      <h1 class="welcome-title">ERS Medical Portal</h1>
+      <p class="welcome-subtitle">Emergency Resource Management System</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content" class="hidden">
+    <!-- Header -->
+    <header class="header">
+      <h1>ERS Medical Portal</h1>
+    </header>
+
+    <!-- Navigation and Content -->
+    <div class="link-sections">
+      <!-- Quick Actions -->
+      <section class="quick-actions">
+        <h2 class="section-title">Quick Access</h2>
+        <div class="chips">
+          <a href="https://docs.google.com/spreadsheets/d/1-EB5Y-E5V_fbY9tv5GCTMbgaDjT4UKL3ERRDEnrI4sQ/edit?usp=sharing"
+            target="_blank">
+            <div class="sched-chip sched-chip-1">
+              <span class="material-symbols-rounded" style="font-size: 18px;">
+                table
+              </span>
+              Schedule
+            </div>
+          </a>
+
+          <a href="https://forms.gle/ChHePHY5N6pT5ESo8" target="_blank">
+            <div class="sched-chip">
+              <span class="material-symbols-rounded" style="font-size: 18px;">
+                description
+              </span>
+              Evaluation Sheet (Staff)
+            </div>
+          </a>
+
+          <a href="https://forms.gle/st9W2wrV8QXS8HZz5" target="_blank">
+            <div class="sched-chip">
+              <span class="material-symbols-rounded" style="font-size: 18px;">
+                description
+              </span>
+              Evaluation Sheet (Doctors)
+            </div>
+          </a>
+
+          <a href="https://forms.gle/Cvqfp1csvimc2EUu7" target="_blank">
+            <div class="sched-chip">
+              <span class="material-symbols-rounded" style="font-size: 18px;">
+                qr_code
+              </span>
+              QR Code Tracker
+            </div>
+          </a>
+
+          <a href="http://QuickConnect.to/ersmpcc" target="_blank">
+            <div class="sched-chip">
+              <span class="material-symbols-rounded" style="font-size: 18px;">
+                storage
+              </span>
+              ERS Server Access
+            </div>
+          </a>
+
+          <div class="sched-chip wifi-qr-chip" style="cursor: pointer;">
+            <span class="material-symbols-rounded" style="font-size: 18px;">
+              wifi
+            </span>
+            WiFi Connect
+          </div>
+        </div>
+      </section>
+
+      <!-- Ward & OPD Files -->
+      <section class="ward-opd-section">
+        <div class="staff">
+          <h2 class="forms-sec">Ward & OPD Files</h2>
+          <select id="station-filter" class="filter-dropdown">
+            <option value="all">All Stations</option>
+            <option value="opd">OPD</option>
+            <option value="ward">Ward/Nurse's Station</option>
+          </select>
+        </div>
+
+        <div class="section">
+          <!-- Ward Cards -->
+          <a href="https://forms.gle/ughYfsuUF8unLJc77" target="_blank">
+            <div class="card ward-card">
+              <img src="images/card images/Nurse's Station Inventory.png" alt="Nurse's Station" class="card-image">
+              <div class="card-label">Nurse's Station Form</div>
+            </div>
+          </a>
+
+          <a href="https://docs.google.com/spreadsheets/d/10dUcoYVLhj2l_SMhdDWiFIOuJbr2W4o7Gs1ygZBBs8s/edit?usp=sharing"
+            target="_blank">
+            <div class="card ward-card">
+              <img src="images/card images/Nurse's Inventory Sheet.png" alt="Nurse's Inventory Sheet"
+                class="card-image">
+              <div class="card-label">Nurse's Inventory Tracker</div>
+            </div>
+          </a>
+
+          <a href="https://docs.google.com/document/d/18goPlg0vVf5eG6zCTDKp7MIUpVvd9nId4yzYCU86ZsA/edit?usp=sharing"
+            target="_blank">
+            <div class="card ward-card">
+              <img src="images/card images/Doctor's Order Form.png" alt="Doctor's Order Form" class="card-image">
+              <div class="card-label">Doctor's Order Form</div>
+            </div>
+          </a>
+
+          <!-- OPD Cards -->
+          <a href="https://docs.google.com/spreadsheets/d/1nUyt3sFrgWrKJvoiMcNFUHHfHrILB2RYlDYe_tjbWBg/edit?usp=sharing"
+            target="_blank">
+            <div class="card opd-card">
+              <img src="images/card images/OPD's Inventory Sheet.png" alt="Patient Card Regular" class="card-image">
+              <div class="card-label">OPD's Inventory Sheet</div>
+            </div>
+          </a>
+
+          <a href="https://docs.google.com/document/d/1IuDqG2Q_F1mGwB03I3allE4DEmhCjbcg_Lg2YDD_mOQ/edit?usp=sharing"
+            target="_blank">
+            <div class="card opd-card">
+              <img src="images/card images/OPD's Inventory Sheet.png" alt="Patient Card Regular" class="card-image">
+              <div class="card-label">Patient Card (Regular)</div>
+            </div>
+          </a>
+
+          <a href="https://docs.google.com/document/d/1f73Eo67NAP_MYhGQ-TapOhE8sH5xnUwSaW65BMTSMbc/edit?usp=sharing"
+            target="_blank">
+            <div class="card opd-card">
+              <img src="images/card images/Patient Card-2.png" alt="Patient Card OB" class="card-image">
+              <div class="card-label">Patient Card (OB)</div>
+            </div>
+          </a>
+
+          <a href="https://docs.google.com/document/d/1mRKisBTarggl-_OqBZT70IO1_RKJwu1l1Gl0bOCMGNI/edit?usp=sharing"
+            target="_blank">
+            <div class="card opd-card">
+              <img src="images/card images/Patient Card-3.png" alt="Patient Card Pedia" class="card-image">
+              <div class="card-label">Patient Card (Pedia)</div>
+            </div>
+          </a>
+
+          <a href="https://forms.gle/uBwcDbnCGwkdq7V5A" target="_blank">
+            <div class="card opd-card">
+              <img src="images/card images/Item Request.png" alt="Item Request Form" class="card-image">
+              <div class="card-label">Item Request Form</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Office Files -->
+      <section class="office-files">
+        <h2 class="sheet-sec">Office Files</h2>
+        <div class="section">
+          <a href="https://anacondajuts95.github.io/ERS-Schedule/" target="_blank">
+            <div class="card">
+              <img src="images/card images/Schedule.png" alt="ERS Schedule" class="card-image">
+              <div class="card-label">ERS Schedule</div>
+            </div>
+          </a>
+
+          <a href="https://docs.google.com/spreadsheets/d/15ltb9gsSmONF3_GAp4K_WXraLIMQjRQDYFwiEbEdiPc/edit?usp=sharing"
+            target="_blank">
+            <div class="card">
+              <img src="images/card images/Nurse's Station Sheet.png" alt="Patient Medication Tracker"
+                class="card-image">
+              <div class="card-label">Patient Medication Tracker</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Drive Section -->
+      <section class="drive-files">
+        <h2 class="drive-sec">Project Management</h2>
+        <div class="section">
+          <a href="https://ersmpcc.atlassian.net/jira/core/projects/ETM/board" target="_blank">
+            <div class="card">
+              <img src="images/card images/Jira Activity.png" alt="Jira Activity Scheduler" class="card-image">
+              <div class="card-label">Jira Activity Scheduler</div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- WiFi QR Modal -->
+  <div id="wifi-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>WiFi QR Codes</h2>
+      <div class="wifi-qr-container">
+        <div class="qr-code">
+          <img src="images/qr-codes/QR-ERSMPCC.png" alt="Staff WiFi QR Code">
+          <p>Network: ERSMPCC</p>
+        </div>
+        <div class="qr-code">
+          <img src="images/qr-codes/QR-ERSMPCC-OPD.png" alt="Guest WiFi QR Code">
+          <p>Network: ERSMPCC-OPD</p>
+        </div>
       </div>
     </div>
-    
-    <!-- Main Content -->
-    <main id="main-content" class="hidden">
-      <!-- Header -->
-      <header class="header">
-        <h1>ERS Medical Portal</h1>
-      </header>
+  </div>
 
-      <!-- Navigation and Content -->
-      <div class="link-sections">
-        <!-- Quick Actions -->
-        <section class="quick-actions">
-          <h2 class="section-title">Quick Access</h2>
-          <div class="chips">
-            <a href="https://docs.google.com/spreadsheets/d/1-EB5Y-E5V_fbY9tv5GCTMbgaDjT4UKL3ERRDEnrI4sQ/edit?usp=sharing" target="_blank">
-              <div class="sched-chip sched-chip-1">
-                <span class="material-symbols-rounded" style="font-size: 18px;">
-                  table
-                </span>
-                Schedule
-              </div>
-            </a>
-        
-            <a href="https://forms.gle/ChHePHY5N6pT5ESo8" target="_blank">
-              <div class="sched-chip">
-                <span class="material-symbols-rounded" style="font-size: 18px;">
-                  description
-                </span>
-                Evaluation Sheet (Staff)
-              </div>
-            </a>
-      
-            <a href="https://forms.gle/st9W2wrV8QXS8HZz5" target="_blank">
-              <div class="sched-chip">
-                <span class="material-symbols-rounded" style="font-size: 18px;">
-                  description
-                </span>
-                Evaluation Sheet (Doctors)
-              </div>
-            </a>
+  <div class="bottom"></div>
+  <script src="script.js"></script>
+</body>
 
-            <a href="https://forms.gle/Cvqfp1csvimc2EUu7" target="_blank">
-              <div class="sched-chip">
-                <span class="material-symbols-rounded" style="font-size: 18px;">
-                  qr_code
-                </span>
-                QR Code Tracker
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <!-- Ward & OPD Files -->
-        <section class="ward-opd-section">
-          <div class="staff">
-            <h2 class="forms-sec">Ward & OPD Files</h2>
-            <select id="station-filter" class="filter-dropdown">
-              <option value="all">All Stations</option>
-              <option value="opd">OPD</option>
-              <option value="ward">Ward/Nurse's Station</option>
-            </select>
-          </div>
-          
-          <div class="section">
-            <!-- Ward Cards -->
-            <a href="https://forms.gle/ughYfsuUF8unLJc77" target="_blank">
-              <div class="card ward-card">
-                <img src="images/card images/Nurse's Station Inventory.png" alt="Nurse's Station" class="card-image">
-                <div class="card-label">Nurse's Station Form</div>
-              </div>
-            </a>
-
-            <a href="https://docs.google.com/spreadsheets/d/10dUcoYVLhj2l_SMhdDWiFIOuJbr2W4o7Gs1ygZBBs8s/edit?usp=sharing" target="_blank">
-              <div class="card ward-card">
-                <img src="images/card images/Nurse's Inventory Sheet.png" alt="Nurse's Inventory Sheet" class="card-image">
-                <div class="card-label">Nurse's Inventory Tracker</div>
-              </div>
-            </a>
-
-            <a href="https://docs.google.com/document/d/18goPlg0vVf5eG6zCTDKp7MIUpVvd9nId4yzYCU86ZsA/edit?usp=sharing" target="_blank">
-              <div class="card ward-card">
-                <img src="images/card images/Doctor's Order Form.png" alt="Doctor's Order Form" class="card-image">
-                <div class="card-label">Doctor's Order Form</div>
-              </div>
-            </a>
-
-            <!-- OPD Cards -->
-             <a href="https://docs.google.com/spreadsheets/d/1nUyt3sFrgWrKJvoiMcNFUHHfHrILB2RYlDYe_tjbWBg/edit?usp=sharing" target="_blank">
-              <div class="card opd-card">
-                <img src="images/card images/OPD's Inventory Sheet.png" alt="Patient Card Regular" class="card-image">
-                <div class="card-label">OPD's Inventory Sheet</div>
-              </div>
-            </a>
-
-            <a href="https://docs.google.com/document/d/1IuDqG2Q_F1mGwB03I3allE4DEmhCjbcg_Lg2YDD_mOQ/edit?usp=sharing" target="_blank">
-              <div class="card opd-card">
-                <img src="images/card images/OPD's Inventory Sheet.png" alt="Patient Card Regular" class="card-image">
-                <div class="card-label">Patient Card (Regular)</div>
-              </div>
-            </a>
-
-            <a href="https://docs.google.com/document/d/1f73Eo67NAP_MYhGQ-TapOhE8sH5xnUwSaW65BMTSMbc/edit?usp=sharing" target="_blank">
-              <div class="card opd-card">
-                <img src="images/card images/Patient Card-2.png" alt="Patient Card OB" class="card-image">
-                <div class="card-label">Patient Card (OB)</div>
-              </div>
-            </a>
-
-            <a href="https://docs.google.com/document/d/1mRKisBTarggl-_OqBZT70IO1_RKJwu1l1Gl0bOCMGNI/edit?usp=sharing" target="_blank">
-              <div class="card opd-card">
-                <img src="images/card images/Patient Card-3.png" alt="Patient Card Pedia" class="card-image">
-                <div class="card-label">Patient Card (Pedia)</div>
-              </div>
-            </a>
-
-            <a href="https://forms.gle/uBwcDbnCGwkdq7V5A" target="_blank">
-              <div class="card opd-card">
-                <img src="images/card images/Item Request.png" alt="Item Request Form" class="card-image">
-                <div class="card-label">Item Request Form</div>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <!-- Office Files -->
-        <section class="office-files">
-          <h2 class="sheet-sec">Office Files</h2>
-          <div class="section">
-            <a href="https://anacondajuts95.github.io/ERS-Schedule/" target="_blank">
-              <div class="card">
-                <img src="images/card images/Schedule.png" alt="ERS Schedule" class="card-image">
-                <div class="card-label">ERS Schedule</div>
-              </div>
-            </a>
-            
-            <a href="https://docs.google.com/spreadsheets/d/15ltb9gsSmONF3_GAp4K_WXraLIMQjRQDYFwiEbEdiPc/edit?usp=sharing" target="_blank">
-              <div class="card">
-                <img src="images/card images/Nurse's Station Sheet.png" alt="Patient Medication Tracker" class="card-image">
-                <div class="card-label">Patient Medication Tracker</div>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <!-- Drive Section -->
-        <section class="drive-files">
-          <h2 class="drive-sec">Project Management</h2>
-          <div class="section">
-            <a href="https://ersmpcc.atlassian.net/jira/core/projects/ETM/board" target="_blank">
-              <div class="card">
-                <img src="images/card images/Jira Activity.png" alt="Jira Activity Scheduler" class="card-image">
-                <div class="card-label">Jira Activity Scheduler</div>
-              </div>
-            </a>
-          </div>
-        </section>
-      </div>
-    </main>
-    
-    <div class="bottom"></div>
-    <script src="script.js"></script>
-  </body>
 </html>
